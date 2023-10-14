@@ -1,0 +1,6 @@
+- um die App für das Depoyment vorzubreiten, muss "ng build" ausgeführt werden
+- anschließend muss der ganze Inhalt des Ordners dist (inkl. Unterordner auf den Server opiert werden
+- dann sollte die App schon laufen
+- wenn das Zielverzeichnis auf dem Server allerdings nicht root ist, dann muss mit "ng build --base-href /angular/" gebaut werden. "/angular/" ist dabei das Zielverzeichnis
+- im Originalcode wurden die Bilder in assets z.B. mit "../assets/logo.svg" verlinkt. Das funktioniert lokal, aber nicht auf dem Apache-Server. In beiden Situationen funktioniert es hingegen mit der Angabe "./assets/logo.svg".
+- am Ende habe ich beim Aufräumen zu viel gelöscht, so dass die App nicht mehr funktioniert
